@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Two-Column Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .column {
+      flex: 1;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+    }
+
+    /* Make one column on smaller screens */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Responsive Two-Column Layout</h1>
+  <div class="container">
+    <div class="column">Column 1: This is the left column.</div>
+    <div class="column">Column 2: This is the right column.</div>
+  </div>
+</body>
+</html>
