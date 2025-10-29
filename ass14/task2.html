@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Animation</title>
+  <style>
+    .move-text {
+      position: relative;
+      font-size: 24px;
+      animation: moveRight 6s linear infinite;
+      color: aqua;
+    }
+
+    @keyframes moveRight {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: 1000px;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+    <h1>Animate text moving from left to right using @keyframes.</h1>
+  <h2 class="move-text">Moving Text</h2>
+  <h3 class="move-text">sasi</h3>
+</body>
+</html>

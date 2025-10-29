@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Image Grow on Hover</title>
+  <style>
+    .grow {
+      display: inline-block;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+      transform-origin: center;
+    }
+
+    .grow img {
+      display: block;
+      width: 300px;               
+      height: auto;
+    }
+
+    .grow:hover {
+      transform: scale(1.12);
+    }
+  </style>
+</head>
+<body>
+  <h3>Hover the image:</h3>
+  <a class="grow" href="#">
+   <img src="./OIP.jpg" alt="">
+  </a>
+</body>
+</html>
+<style>
+  .grow img {
+    display: block;
+    width: 300px;
+    height: auto;
+  }
+
+  .grow {                   
+    transition: transform 0.2s ease;
+  }
+
+  .grow:hover {
+    transform: scale(1.12);
+  }
+</style>
+
+<style>
+  .grow img {
+    display: block;
+    width: 300px;
+    height: auto;
+  }
+
+  .grow {                   
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  .grow:hover {
+    transform: scale(1.12);
+  } 
+</style>
+
+<style>
+  .grow img {
+    display: block;
+    width: 300px;
+    height: auto;
+  }
+
+  .grow {
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  .grow:hover {
+    transform: scale(1.12);
+  }
+</style>
