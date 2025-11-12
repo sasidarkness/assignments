@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form validation</h1>
+    <form id="sa">
+    <label>name</label>
+    <input type="text" id="si">
+    <br>
+    <label for="">password</label>
+    <input type="password" id="ku">
+    <br>
+    <button type="submit" id="ma">submit</button>
+    </form>
+    <script>
+        document.getElementById("sa").addEventListener("submit",function (s) {
+          s.preventDefault();  
+        
+        try{
+             let a = document.getElementById("si").value;
+             let b = document.getElementById("ku").value;
+ 
+            if ( a  ==="" || b ==="") {
+                throw new Error("error.please check again");   
+            }
+            alert("good")
+
+
+        }catch(e){
+            alert("error:"+ e.message)
+        }
+    })
+        
+
+    </script>
+</body>
+</html>

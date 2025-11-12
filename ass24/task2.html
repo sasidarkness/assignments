@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./eb8bf122d74cd89daa4ce8f1a4affcae.jpg">
+</head>
+<body>
+    <h1> live text</h1>
+    <br>
+    <input type="text" id="s" placeholder="some text">
+    <br>
+    <p id="a"></p>
+    <script>
+        document.getElementById("s").addEventListener("input", function () {
+            document.getElementById("a").textContent="text : " + this.value
+            document.getElementById("a").style.color ="blue" 
+
+        })
+    </script>
+</body>
+</html>

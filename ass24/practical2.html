@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>text live counter</h1>
+    <textarea id="sa" cols="20" rows="10" placeholder="text"></textarea>
+    <p>Character Count: <span id="count">0</span></p>
+    <script>
+        let input = document.getElementById("sa")
+        let count = document.getElementById("count")
+        input.addEventListener("input", function() {
+      count.textContent = input.value.length;
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Change Color Example</title>
+<style>
+  #colorBox {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div id="colorBox"></div>
+<button id="changeColorBtn">Change Color</button>
+
+<script>
+  document.getElementById("changeColorBtn").addEventListener("click", function() {
+    try {
+      // Try to get the element
+      const box = document.getElementById("colorBox");
+      if (!box) {
+        throw new Error("Element not found!");
+      }
+
+      // Change to a random color
+      const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+      box.style.backgroundColor = randomColor;
+    } catch (error) {
+      // Handle the error
+      console.log("Error:", error.message);
+      alert(error.message);
+    }
+  });
+</script>
+
+</body>
+</html>
