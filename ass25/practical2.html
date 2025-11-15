@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation with try...catch</title>
+</head>
+<body>
+  <h2>Registration Form</h2>
+  
+  <form id="userForm">
+    <label>Name:</label>
+    <input type="text" id="name"><br><br>
+
+    <label>Email:</label>
+    <input type="text" id="email"><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById("userForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+
+      try {
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+
+        if (name === "" || email === "") {
+          throw new Error("All fields are required!");
+        }
+
+        if (!email.includes("@")) {
+          throw new Error("Invalid email format!");
+        }
+
+        alert("✅ Form submitted successfully!");
+      } 
+      catch (error) {
+        alert("❌ Error: " + error.message);
+      } 
+      finally {
+        console.log("Code executed.");
+      }
+    });
+  </script>
+</body>
+</html>
