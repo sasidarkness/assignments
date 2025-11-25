@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LocalStorage Example</title>
+</head>
+<body>
+
+    <h2>Store Name & Course</h2>
+
+    <label>Name:</label>
+    <input type="text" id="name"><br><br>
+
+    <label>Course:</label>
+    <input type="text" id="course"><br><br>
+
+    <button onclick="saveData()">Save</button>
+
+    <h3>Saved Data:</h3>
+    <p id="result"></p>
+
+    <script>
+        
+        window.onload = function () {
+            let savedName = localStorage.getItem("username");
+            let savedCourse = localStorage.getItem("course");
+
+            if (savedName && savedCourse) {
+                document.getElementById("result").innerText = 
+                    "Name: " + savedName + ", Course: " + savedCourse;
+            }
+        }
+
+        
+        function saveData() {
+            let name = document.getElementById("name").value;
+            let course = document.getElementById("course").value;
+
+            localStorage.setItem("username", name);
+            localStorage.setItem("course", course);
+
+            alert("Data Saved!");
+
+            
+            document.getElementById("result").innerText = 
+                "Name: " + name + ", Course: " + course;
+        }
+    </script>
+
+</body>
+</html>

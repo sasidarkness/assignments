@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Profile Fetch</title>
+</head>
+<body>
+
+<h2>GitHub User Info</h2>
+<p><strong>Login:</strong> <span id="login"></span></p>
+<p><strong>Public Repos:</strong> <span id="repos"></span></p>
+
+<script>
+    fetch("https://api.github.com/users/<your-username>")
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("login").textContent = data.login;
+            document.getElementById("repos").textContent = data.public_repos;
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+</script>
+
+</body>
+</html>

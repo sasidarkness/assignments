@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DevTools Practice</title>
+</head>
+<body>
+
+<h2>DevTools Debugging Practice</h2>
+<button onclick="runTest()">Run Test</button>
+
+<script>
+    function runTest() {
+        
+        console.log("Test started!");
+        console.log("User:", "Sasi");
+        console.log("Numbers:", 10, 20, 30);
+
+       
+        const products = [
+            { id: 1, name: "Laptop", price: 45000 },
+            { id: 2, name: "Mobile", price: 25000 },
+            { id: 3, name: "Keyboard", price: 1200 }
+        ];
+
+        console.table(products);
+
+       
+        let x = 5;
+        let y = 15;
+
+     
+        let result = x + y;
+
+        console.log("Result:", result);
+    }
+</script>
+
+</body>
+</html>

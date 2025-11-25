@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Debug Quiz</title>
+</head>
+<body>
+
+<h2>🛠 Debug This Code — Mini Quiz</h2>
+
+<!-- Question 1 -->
+<p><b>1. Fix the error:</b></p>
+<pre>
+let x = 5
+console.log(x))    // bug here
+</pre>
+
+<input id="a1" placeholder="Type the correct line">
+<button onclick="check1()">Check</button>
+<p id="r1"></p>
+
+<hr>
+
+
+<p><b>2. Fix this function:</b></p>
+<pre>
+function hello {
+  console.log("Hi");
+}
+</pre>
+
+<input id="a2" placeholder="Type the correct function line">
+<button onclick="check2()">Check</button>
+<p id="r2"></p>
+
+<script>
+function check1() {
+    let ans = document.getElementById("a1").value.trim();
+    if (ans === "console.log(x);" || ans === "console.log(x)") {
+        document.getElementById("r1").innerHTML = "✅ Correct!";
+    } else {
+        document.getElementById("r1").innerHTML = "❌ Try again!";
+    }
+}
+
+function check2() {
+    let ans = document.getElementById("a2").value.trim();
+    if (ans === "function hello() {" || ans === "function hello() {") {
+        document.getElementById("r2").innerHTML = "✅ Correct!";
+    } else {
+        document.getElementById("r2").innerHTML = "❌ Still wrong. Check ()";
+    }
+}
+</script>
+
+</body>
+</html>

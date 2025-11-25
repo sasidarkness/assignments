@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Console & Breakpoint Practice</title>
+</head>
+<body>
+
+<h2>Open DevTools → Console & Sources Tab</h2>
+<button onclick="testConsole()">Run Test</button>
+
+<script>
+    function testConsole() {
+       
+        console.log("Button clicked!");
+
+        
+        const student = [
+            { name: "Sasi", course: "BCA", age: 22 },
+            { name: "Kumar", course: "BSc", age: 21 },
+            { name: "Arun", course: "BTech", age: 23 }
+        ];
+
+     
+        console.table(student);
+
+        
+        let a = 10;
+        let b = 20;
+        let sum = a + b; 
+
+        console.log("Sum:", sum);
+    }
+</script>
+
+</body>
+</html>
