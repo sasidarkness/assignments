@@ -1,0 +1,4 @@
+
+SELECT *
+FROM employees
+WHERE salary NOT BETWEEN 50000 AND 80000;

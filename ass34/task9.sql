@@ -1,0 +1,5 @@
+
+SELECT *
+FROM employees
+LIMIT 10 OFFSET 10;
+
