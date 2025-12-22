@@ -1,4 +1,4 @@
-let number = 5; 
+let number = -5; 
 
 
 if (number > 0) {
