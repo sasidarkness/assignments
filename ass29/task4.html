@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Change Text & Color</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h2 id="myHeading">Original Heading</h2>
+  <button id="changeBtn">Change</button>
+
+  <script>
+    $(document).ready(function(){
+      $("#changeBtn").click(function(){
+        $("#myHeading").css("color","red").text("Heading Changed!");
+      });
+    });
+  </script>
+</body>
+</html>

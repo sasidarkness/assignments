@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hide/Show Paragraph</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <p id="myPara">This is a paragraph.</p>
+  <button id="hideBtn">Hide</button>
+  <button id="showBtn">Show</button>
+
+  <script>
+    $(document).ready(function(){
+      $("#hideBtn").click(function(){ $("#myPara").hide(); });
+      $("#showBtn").click(function(){ $("#myPara").show(); });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quiz Toggler</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h2>Quiz Question</h2>
+  <p>What does HTML stand for?</p>
+  <button id="showAns">Show Answer</button>
+  <button id="hideAns">Hide Answer</button>
+  <p id="answer" style="display:none;">HyperText Markup Language</p>
+
+  <script>
+    $(document).ready(function(){
+      $("#showAns").click(function(){ $("#answer").show(); });
+      $("#hideAns").click(function(){ $("#answer").hide(); });
+    });
+  </script>
+</body>
+</html>

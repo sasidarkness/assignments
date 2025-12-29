@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio Fade-In</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    section { display:none; margin:20px 0; padding:10px; border:1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <button id="showBio">Show Bio</button>
+  <button id="showProjects">Show Projects</button>
+
+  <section id="bio">
+    <h2>About Me</h2>
+    <p>I am Sasi, an aspiring Full Stack Developer.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Mini E-commerce App, User Management System, and more.</p>
+  </section>
+
+  <script>
+    $(document).ready(function(){
+      $("#showBio").click(function(){ $("#bio").fadeIn("slow"); });
+      $("#showProjects").click(function(){ $("#projects").fadeIn("slow"); });
+    });
+  </script>
+</body>
+</html>

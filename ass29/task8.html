@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Notification Box</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #notify { display:none; background:lightyellow; border:1px solid #999; padding:10px; margin-top:10px; }
+  </style>
+</head>
+<body>
+  <button id="showNotify">Show Notification</button>
+  <div id="notify">This is a notification message!</div>
+
+  <script>
+    $(document).ready(function(){
+      $("#showNotify").click(function(){
+        $("#notify").slideDown();
+      });
+    });
+  </script>
+</body>
+</html>

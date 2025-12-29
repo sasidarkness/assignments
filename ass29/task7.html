@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Photo Gallery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <img id="galleryImg" src="https://via.placeholder.com/200?text=Image+1" alt="Gallery">
+  <br>
+  <button id="img1">Show Image 1</button>
+  <button id="img2">Show Image 2</button>
+  <button id="img3">Show Image 3</button>
+
+  <script>
+    $(document).ready(function(){
+      $("#img1").click(function(){
+        $("#galleryImg").fadeOut(function(){
+          $(this).attr("src","https://via.placeholder.com/200?text=Image+1").fadeIn();
+        });
+      });
+      $("#img2").click(function(){
+        $("#galleryImg").fadeOut(function(){
+          $(this).attr("src","https://via.placeholder.com/200?text=Image+2").fadeIn();
+        });
+      });
+      $("#img3").click(function(){
+        $("#galleryImg").fadeOut(function(){
+          $(this).attr("src","https://via.placeholder.com/200?text=Image+3").fadeIn();
+        });
+      });
+    });
+  </script>
+</body>
+</html>

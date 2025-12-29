@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Slide Element</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #box {
+      width: 200px; height: 100px;
+      background: lightblue;
+      display: none; 
+      text-align: center; line-height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <button id="slideBtn">Slide Box</button>
+  <div id="box">Sliding Box</div>
+
+  <script>
+    $(document).ready(function(){
+      $("#slideBtn").click(function(){ $("#box").slideToggle(); });
+    });
+  </script>
+</body>
+</html>

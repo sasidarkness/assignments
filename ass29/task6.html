@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Info Card</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #card { width: 250px; border: 1px solid #333; padding: 10px; cursor: pointer; }
+    #details { display: none; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div id="card">
+    <h3>Info Card</h3>
+    <p>Click to expand/collapse</p>
+    <div id="details">
+      <p>Here are more details about this card. You can hide or show this content.</p>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $("#card").click(function(){
+        $("#details").slideToggle();
+      });
+    });
+  </script>
+</body>
+</html>

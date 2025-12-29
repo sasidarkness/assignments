@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Toggle Image</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <img id="myImage" src="https://via.placeholder.com/150" alt="Sample">
+  <button id="toggleBtn">Toggle Image</button>
+
+  <script>
+    $(document).ready(function(){
+      $("#toggleBtn").click(function(){ $("#myImage").toggle(); });
+    });
+  </script>
+</body>
+</html>
